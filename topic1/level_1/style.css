@@ -1,0 +1,27 @@
+.padre{
+    
+}
+
+    .header{
+        background-color: #000;
+    }
+        .menu{
+            background-color: #2d4059;
+        }
+            .logo{
+                background-color: #ea5455;
+            }
+            .nav{
+                background-color: #ea5455;
+            }
+            .social{
+                background-color: #ea5455;
+            }
+    
+
+    .section{
+        background-color: #000;  
+    }
+    .footer{
+        background-color: #000;
+    }

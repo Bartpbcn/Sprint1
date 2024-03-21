@@ -4,33 +4,24 @@
     box-sizing: border-box;
 }
 
-body {
-
-    font-family: 'Courier New', Courier, monospace;
-    color: slategrey; 
-}
-
 .header {
    
+    display:flex nowrap;
     background-image: url(images/header.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: contain;
-    padding: 20px;
-    width: 100%;
+    
 }
+
 .menu {
-  
-    display:flex;
-
-
-.menu-social {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+   
 }
+
 .logo {
     padding: 20px;
     flex: 1 1 auto;
@@ -41,38 +32,45 @@ body {
 
 .nav {
     margin: 20px;
-
+ 
     justify-content: space-around;
   
-    flex:8 1 auto;
+    flex:5 1 auto;
     height: 50px;
-    display:flex 
-    align-items: center; 
+    display:flex;
+   
+    
 }
 
 
 
 .nav ul li {
-   /* padding: 15px;
-    margin: auto 50px auto 10px;
-    display: inline-flex;
-   */
+ 
    display: inline-block;
-   padding: 15px;
-}
+   padding: 10px;
+   margin: auto 50px auto 10px;
+   
+   
 
+}
+.nav ul li a{
+    text-decoration: none;
+    color: gray;
+    
+}
 .nav ul li i {
     margin-right: 5px;
+    color: darkgrey;
 }
 
 .social {
-   /* display: flex;
-    flex-flow:row nowrap;
-    flex: 2 1 auto; */
+  
+  
+  
     flex:1 1 auto;
     height: 50px;
     align-items: center;
-    display: flex;}
+   
     justify-content: flex-end;
 }
 
@@ -87,19 +85,19 @@ body {
 }
 
 .banner {
-   /* display:inline-flex
+    display:flex;
     justify-content: center;
-    width: 100%;
-   
+    width: 70%;
     margin: 100px auto 0px auto;
-    padding: 50px 80px 100px 80px;  */
-    align-self: flex-end;
-    width: 100%;
-    text-align: center;
+     
+    background-color: #00000026;
+
+    
+
     padding: 50px 0;
 }
 
-.banner h1{
+.title {
     font-family: Garamond;
     font-weight: lighter;
     font-size: 40px;
@@ -109,37 +107,45 @@ body {
 
 
 
+@media all and (max-width: 800px){
+   
 
-@media only screen and (max-width: 768px) {
-    .body {
-        padding: 20px;
-    }
+.logo {
+    padding: 0px;
+}
 
-    .logo {
-        padding: 0px;
-    }
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+  
+}   
 
-    .box-menu {
-        flex-flow: row nowrap;
+.nav ul {
+   
+        align-items: center;
         justify-content: center;
     }
 
-    .box-menu ul li {
-        padding: 5px;
-        margin: auto;
+.nav ul li {
+     display: flex nowrap;
+                align-items: center;
+        padding: 10px;
+        margin: 5px auto;
     }
 
-    .box-2 {
-        padding: 70px 80px 70px 80px;
-    }
 
-    h1 {
-        text-align: center;
-        margin-top: 20px;
-    }
+.banner {
+    padding: 70px 80px 70px 80px;
 }
 
-@media only screen and (max-width: 600px) {
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+}
+
+
+@media all and (max-width: 400px){
     .body {
         flex-direction: column;
     }

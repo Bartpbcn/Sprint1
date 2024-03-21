@@ -1,129 +1,167 @@
 * {
-    max-width: 1200px;
-    padding: 10px;
-    margin: 10px;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
-
 }
 
 body {
-    display: flex;
-    flex-flow: column nowrap;
-    
-    background-color: white;
-    
+
+    font-family: 'Courier New', Courier, monospace;
+    color: slategrey; 
 }
 
 .header {
-    background-color: #000;
-    display:flex;
-    flex-flow: column nowrap;
-
+   
+    background-image: url(images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    padding: 20px;
+    width: 100%;
 }
-
 .menu {
-    background-color: #2d4059;
+  
     display:flex;
-    flex-flow: row nowrap;
-    height: 100px;
-    
-    
-}
 
+
+.menu-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .logo {
-    background-color: #ea5455;
-    flex:1 1 auto;
+    padding: 20px;
+    flex: 1 1 auto;
     height: 50px;
     align-items: center;
     display: flex;
 }
 
 .nav {
-    background-color: #ea5455;
-    flex:5 1 auto;
-    height: 50px;
-    display: flex; 
-    align-items: center; 
+    margin: 20px;
 
+    justify-content: space-around;
+  
+    flex:8 1 auto;
+    height: 50px;
+    display:flex 
+    align-items: center; 
+}
+
+
+
+.nav ul li {
+   /* padding: 15px;
+    margin: auto 50px auto 10px;
+    display: inline-flex;
+   */
+   display: inline-block;
+   padding: 15px;
+}
+
+.nav ul li i {
+    margin-right: 5px;
 }
 
 .social {
-    background-color: #ea5455;
+   /* display: flex;
+    flex-flow:row nowrap;
+    flex: 2 1 auto; */
     flex:1 1 auto;
     height: 50px;
     align-items: center;
     display: flex;}
+    justify-content: flex-end;
+}
+
+.social ul li {
+    padding: 5px;
+    display:inline-block ;
+   
+}
+
+.social ul li i {
+    padding: 10px;
+}
 
 .banner {
-    background-color: #f07b3f;
-    height: 100px;
-}
-
-h1 {
-    background-color: #ffd460;
-}
-
-.section {
-    background-color: #000;
-    display: flex;
-
-}
-
-.articles {
-    background-color: #4e4e6a;
-    flex:2 1 auto;
-    display:flex;
-    flex-flow:row wrap;
-}
-
-    .article {
-    background-color: chartreuse;
-    flex:1 1 40%;
-
-}
-
-    .navigacion {
-    background-color: #f07b3f;
-    flex:1 1 100%;
-}
-
-        .aside {
-    background-color: rgb(245, 39, 66);
-    display: flex row wrap;
-    flex: 1 1 auto;
-    ;
-}
-
-            .publicity {
-                background-color: #ffea85;
-}
-
-.footer {
-    background-color: #000;
-    display:flex;
+   /* display:inline-flex
     justify-content: center;
-}
-
-.pie {
-    background-color: antiquewhite;
     width: 100%;
+   
+    margin: 100px auto 0px auto;
+    padding: 50px 80px 100px 80px;  */
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
 
+.banner h1{
+    font-family: Garamond;
+    font-weight: lighter;
+    font-size: 40px;
+    color: coral;
+    
 }
-@media all and (max-width: 800px){
-    .section{
-    flex-direction: column;    
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .body {
+        padding: 20px;
     }
-.menu{
-    flex-direction: column;
-    height: auto;
+
+    .logo {
+        padding: 0px;
+    }
+
+    .box-menu {
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .box-menu ul li {
+        padding: 5px;
+        margin: auto;
+    }
+
+    .box-2 {
+        padding: 70px 80px 70px 80px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
 }
-.aside{
-    flex-direction: column;
-    justify-content: center;
-}
-}
-@media all and (max-width: 400px){
-    .articles{
+
+@media only screen and (max-width: 600px) {
+    .body {
         flex-direction: column;
+    }
+
+    .nav ul {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    .social {
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 25px;
     }
 }

@@ -1,8 +1,9 @@
 * {
     padding: 0px;
-    margin: 0px;
+    margin-left: 0px;
+
     box-sizing: border-box;
-}
+} 
 
 .header {
    
@@ -65,8 +66,7 @@
 
 .social {
   
-  
-  
+
     flex:1 1 auto;
     height: 50px;
     align-items: center;
@@ -104,7 +104,62 @@
     color: coral;
     
 }
+.section {
+    background-color: #ee319f;
+    display: flex;
+    
+    
+    
+    
+}
 
+    .articles {
+        background-color: #4e4e6a;
+        flex:4 1 auto;
+        display:flex;
+        flex-flow:row wrap;
+        margin: px;
+        justify-content: space-around;
+
+    }
+
+        
+    .box-1{
+        background-color: rgb(41, 117, 238);
+        width:46%; 
+        margin: 10px;
+        justify-content: space-around;
+        align-content: center;
+
+        
+        
+    }
+    .article1,
+    .article2,
+    .article3,
+    .article4 {
+        flex: 1 1 40%;
+    }
+
+h2{
+        background-color: #ee319f;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+ 
+
+
+
+    .aside {
+        background-color: rgb(245, 39, 66);
+        display: flex;
+        flex: 4 1 auto;
+    }
+
+            .publicity {
+                background-color: gainsboro;
+}
 
 
 @media all and (max-width: 800px){
@@ -144,7 +199,6 @@ h1 {
 }
 }
 
-
 @media all and (max-width: 400px){
     .body {
         flex-direction: column;
@@ -169,5 +223,8 @@ h1 {
 
     h1 {
         font-size: 25px;
+    }
+    .articles{
+        flex-direction: column;
     }
 }

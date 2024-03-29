@@ -12,6 +12,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-right: 40px;
     
 }
 
@@ -43,16 +45,12 @@
     
 }
 
-
-
 .nav ul li {
  
    display: inline-block;
    padding: 10px;
    margin: auto 50px auto 10px;
    
-   
-
 }
 .nav ul li a{
     text-decoration: none;
@@ -89,11 +87,7 @@
     justify-content: center;
     width: 70%;
     margin: 100px auto 0px auto;
-     
     background-color: #00000026;
-
-    
-
     padding: 50px 0;
 }
 
@@ -101,50 +95,92 @@
     font-family: Garamond;
     font-weight: lighter;
     font-size: 40px;
-    color: coral;
+    color: rgba(246, 158, 5, 0.7);
     
 }
 .section {
-    background-color: #ee319f;
+    background-color: #fffafd;
     display: flex;
-    
-    
-    
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
     
 }
 
     .articles {
-        background-color: #4e4e6a;
+        background-color: #afafbe;
         flex:4 1 auto;
         display:flex;
         flex-flow:row wrap;
-        margin: px;
+        margin: 10px;
+        margin-bottom: 30px;
         justify-content: space-around;
 
     }
 
         
     .box-1{
-        background-color: rgb(41, 117, 238);
-        width:46%; 
-        margin: 10px;
+        background-color: gainsboro;
+        width: 46%; 
+        margin-block: 25px;
         justify-content: space-around;
         align-content: center;
-
-        
-        
+        position: relative; 
     }
+ .box-1 img {
+        width: 100%; /*max breedte van vader box-1*/
+        height: auto;
+        display: block;
+    }
+
+
     .article1,
     .article2,
     .article3,
     .article4 {
         flex: 1 1 40%;
+        margin: 10px;
     }
 
+.article-content {
+    column-count: 2; /*article tekst verdelen in 2 kolommen */
+    column-gap: 20px ;
+}
+
+.article-content p{
+    margin-top: 0; /* kolom links op dezelfde hoogte als rechts plaatsen*/
+}
+
+.article1 a {
+    text-decoration: none; /*verwijder de link onderlijning*/
+    color: inherit; /* zelfde kleur aannemen als de onliggende tekst*/
+    display: block;
+    margin-top: 20px;
+}
+.article2 a {
+    text-decoration: none; /*verwijder de link onderlijning*/
+    color: inherit; /* zelfde kleur aannemen als de onliggende tekst*/
+    display: block;
+    margin-top: 20px;
+}
+.article3 a {
+    text-decoration: none; /*verwijder de link onderlijning*/
+    color: inherit; /* zelfde kleur aannemen als de onliggende tekst*/
+    display: block;
+    margin-top: 20px;
+}
+.article4 a {
+    text-decoration: none; /*verwijder de link onderlijning*/
+    color: inherit; /* zelfde kleur aannemen als de onliggende tekst*/
+    display: block;
+    margin-top: 20px;
+}
+
 h2{
-        background-color: #ee319f;
+        background-color: #fa7313;
         padding-top: 20px;
         padding-bottom: 20px;
+        text-decoration: white;
 
     }
  
@@ -154,7 +190,9 @@ h2{
     .aside {
         background-color: rgb(245, 39, 66);
         display: flex;
-        flex: 4 1 auto;
+        flex: 4 2 auto;
+        margin-top: 10px;
+        
     }
 
             .publicity {

@@ -71,16 +71,17 @@ h1 {
 
 .articles {
     background-color: #4e4e6a;
-    flex:2 1 auto;
+    flex: 50%;
     display:flex;
     flex-flow:row wrap;
 }
 
     .article {
     background-color: chartreuse;
-    flex:1 1 40%;
+    
 
 }
+
 
     .navigacion {
     background-color: #f07b3f;

@@ -85,4 +85,48 @@ echo "result of the difference:" . calculator (10, 5, "Difference") . "<br>";
 echo "result of the multiplication:" . calculator (10, 5, "Multiply") . "<br>";
 echo "result of the division:" . calculator (10, 5, "Divide") . "<br>";
 
+
+
+//ex4
+
+$limit = 10;
+$step = 1;
+
+//de loop herhaalt zich tot initiele waarde 1 de end waarde bereilktheeft.
+    
+function countup($limit = 10, $step = 1) {
+            for ($i = 1; $i <= $limit; $i += $step) {
+                echo $i . "<br>";
+
+    }
+} 
+/*In PHP wordt de incrementoperator ++ gebruikt om de waarde van een variabele met 1 te verhogen. Dus als je bijvoorbeeld $i++ gebruikt, wordt $i met 1 verhoogd.
+
+In dit specifieke geval wordt echter de variabele $i niet met 1 verhoogd, maar met een waarde bepaald door de parameter $step. Dus als je $step wilt toevoegen aan $i, moet je de samenstellingstoewijzingsoperator += gebruiken. Hierdoor wordt de waarde van $i met de waarde van $step verhoogd.
+
+Dus als je wilt dat $i met 1 wordt verhoogd bij elke iteratie, gebruik je $i++. Maar als je wilt dat $i met een andere waarde wordt verhoogd, gebruik je $i += $step.*/
+
+countup(); //niet invullen voor de standaardwaarde
+
+countup(20,2); //standaardwaarde gewijzigd van 10, 1 naar 20,2
+
+//ex5
+
+$marks = 40;
+
+if ($marks >= 60){
+    $grade = "FIRST DIVISION";
+}
+else if ($marks >= 45){
+    $grade = "SECOND DIVISION";
+}else if ($marks >= 33){
+    $grade = "THIRD DIVISION";
+}else {
+    $grade = "FAIL";
+
+}  
+
+
+echo "Student grade =  . $grade" . "<br>";
+
 ?>

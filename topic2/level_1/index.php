@@ -129,4 +129,18 @@ else if ($marks >= 45){
 
 echo "Student grade =  . $grade" . "<br>";
 
+
+function isBitten() {
+    // rand(0,1) geeft randomly een cijfer tussen 0 en 1 weer, gelijk een coin.
+    return rand(0,1) < 0.5; //o.5 staat overeen als 50%van de time.
+}
+if (isBitten()) {
+    echo "Charlie bit your finger";
+} else {
+    echo "Charlie bit not your finger";
+}
+
+
+
+
 ?>

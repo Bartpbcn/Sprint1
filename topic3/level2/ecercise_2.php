@@ -47,7 +47,7 @@ function calculateAverages($studentGrades) {
         $count = count($grades);
         $average = $sum/$count;
 
-        echo $student . "it average is:" . $average . "<br>";
+        echo $student . " `s average is:" . $average . "<br>";
 
     // class total?  sum of the classpoints / qunatity of the grades
 
@@ -57,7 +57,7 @@ function calculateAverages($studentGrades) {
 }
 
 $classAverage = $classTotal / $TotalCountOfGrades;
-echo "Class average: " . $classAverage . "<br>";
+echo "The class it average: " . $classAverage . "<br>";
 }
 
 // oproepen fucntie /niet vergeten!!!

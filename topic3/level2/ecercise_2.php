@@ -45,7 +45,7 @@ function calculateAverages($studentGrades) {
         foreach($studentGrades as $student => $grades) {
         $sum = array_sum($grades);
         $count = count($grades);
-        $average = $sum/$count
+        $average = $sum/$count;
 
         echo $student . "it average is:" . $average . "<br>";
 

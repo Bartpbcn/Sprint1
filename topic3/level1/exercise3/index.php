@@ -17,13 +17,13 @@ function controllingWords($words, $char){
 }
 
 //Test
-$words = [“hello”, “Php”, “Html”];
+$words = ["hello", "Php", "Html"];
 
-if (controllingWords($words, 'h')){
+/*if (controllingWords($words, 'h')){
 echo "True, all the words contain the character h. <br>";
 } else{
     echo "False";
-}
+}*/
 
 if (controllingWords($words, 'i')){
     echo "True, all the words contain the character i. <br>";

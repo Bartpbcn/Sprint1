@@ -55,7 +55,7 @@ echo "Product of all variables: " . ($X * $Y * $N * $M) . "<br>";
 
 //calculation via a switch as we can compare 1 var with min 1 action:
 
-function calculator ($num1, $num2, $operation){ 
+function calculator (int $num1, int $num2, string $operation) : int|string{ 
 switch ($operation) {
     case "Sum":
         return $num1 + $num2;
@@ -94,7 +94,7 @@ $step = 1;
 
 //de loop herhaalt zich tot initiele waarde 1 de end waarde bereilktheeft.
     
-function countup($limit = 10, $step = 1) {
+function countup(int $limit = 10, int $step = 1) : void {
             for ($i = 1; $i <= $limit; $i += $step) {
                 echo $i . "<br>";
 
@@ -112,23 +112,26 @@ countup(20,2); //standaardwaarde gewijzigd van 10, 1 naar 20,2
 
 //ex5
 
-$marks = 40;
+$mark = 40;
 
-if ($marks >= 60){
+
+
+function whichDivision(int $mark): string
+{if ($mark >= 60){
     $grade = "FIRST DIVISION";
 }
-else if ($marks >= 45){
+else if ($mark >= 45){
     $grade = "SECOND DIVISION";
-}else if ($marks >= 33){
+}else if ($mark >= 33){
     $grade = "THIRD DIVISION";
 }else {
     $grade = "FAIL";
 
 }  
+return "Student grade = $grade <br>";
+}
 
-
-echo "Student grade =  . $grade" . "<br>";
-
+echo whichDivision($mark);
 
 function isBitten() {
     // rand(0,1) geeft randomly een cijfer tussen 0 en 1 weer, gelijk een coin.

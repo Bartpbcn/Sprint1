@@ -26,10 +26,4 @@ $employee = new Employee("Bart", 7000);
 
 $employee-> printTaxInformation();
 
-
-
-
-    
-
-
 ?>

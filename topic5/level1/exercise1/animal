@@ -1,0 +1,10 @@
+<?php
+
+class Animal{
+
+public function makeSound() : string{
+    echo "A Sound";
+}
+
+
+}

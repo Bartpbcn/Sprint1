@@ -7,7 +7,7 @@ $dog = new Dog("Buddy");
 $cat = new Cat ("Shadow");
 
 // call the nethod for each object
-echo $dog->makeSound() . PHP_EOL;
+echo $dog->makeSound() . "<br>";
 echo $cat->makeSound() . PHP_EOL; 
 
 ?>

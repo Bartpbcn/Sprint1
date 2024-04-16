@@ -8,7 +8,7 @@
 <body>
 
 <p> Please fill in the following information:</p>
-    <form action="includes/formhandler.php" method="post">
+    <form action="formhandler.php" method="post">
   
      <input  type="text" name="firstname" id="firstname" placeholder="firstname...">
     <br>

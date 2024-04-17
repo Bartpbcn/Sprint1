@@ -1,0 +1,26 @@
+{
+    "name": "bartpauwels/exercise1",
+    "require-dev": {
+        "phpunit/phpunit": "10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bartpauwels\\Exercise1\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bartpauwels\\Exercise1\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bartpbcn",
+            "email": "162989852+Bartpbcn@users.noreply.github.com"
+        }
+    ],
+   
+    "scripts": {
+        "test": "phpunit"
+    }
+}

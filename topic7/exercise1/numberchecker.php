@@ -1,4 +1,6 @@
 <?php
+namespace Bartpauwels\Exercise1;
+
 class NumberChecker  {
 
 

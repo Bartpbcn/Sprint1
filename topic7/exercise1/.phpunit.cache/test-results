@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"Bartpauwels\\Exercise1\\NumberCheckerTest::testIsEven":0.006,"Bartpauwels\\Exercise1\\NumberCheckerTest::testIsPositive":0}}
+{"version":1,"defects":[],"times":{"Bartpauwels\\Exercise1\\NumberCheckerTest::testIsEven":0.004,"Bartpauwels\\Exercise1\\NumberCheckerTest::testIsPositive":0}}
